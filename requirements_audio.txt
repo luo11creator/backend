@@ -1,0 +1,37 @@
+# ============================================================
+# 多维盾卫 — 音频检测模块依赖
+# ============================================================
+# 安装方式:
+#   pip install -r requirements_audio.txt
+#
+# 额外需要安装 ffmpeg (Whisper依赖):
+#   Windows: 下载 https://ffmpeg.org/download.html 并加入PATH
+#   Mac:     brew install ffmpeg
+#   Linux:   sudo apt install ffmpeg
+
+# --- 核心框架 ---
+fastapi>=0.100.0
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+
+# --- 音频处理 ---
+librosa>=0.10.0
+soundfile>=0.12.0
+pydub>=0.25.0
+audiomentations>=0.34.0
+
+# --- ASR语音识别 ---
+openai-whisper>=20231117
+
+# --- AI推理 ---
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# --- 可视化 ---
+matplotlib>=3.7.0
+
+# --- 工具 ---
+requests>=2.28.0
+tqdm>=4.65.0
